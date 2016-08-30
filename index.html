@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width, initial = scale = 1.0"> 
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="sign"></div>
+			<button></button>
+			<form action="">
+			<label for="quest"></label>
+				<input type="search" placeholder="Search" id="quest">
+				<input type="submit" value="">
+			</form>
+		</header>
+		<section>
+			<article>
+				<h1>Go to adjacent</h1>
+				<p>Component for drawing in the presentation</p>
+				<p>Consist of the button to enable/disable drawing mode and canvas - drawing area.</p>
+				<h2>Install</h2>
+				<p>bower install -- save test/paint-tool</p>
+				<h2>Link</h2>
+					<code>link rv-component="components/paint-tool"></code>
+				<h3>Styles:</h3>	
+				<code>link rel="stylesheet" href="compostyle.css"</code>
+				<h3>Use</h3>
+				<ol>
+					<li>Need to add binder to draw on any element:
+						<code>button rv-paint>Paint/button></code>	
+					</li>
+					<li>
+						When drawing mode is enabled, on this element automatically add class 'active'. 
+					</li>
+				</ol>
+				<h2>Examples</h2>
+				<p>Besides you can change paint-tool default values. To do this, add an object 'paint' in app.json.</p>
+				<p>
+					<code>'LineWidth' *(number)* - painting line width in px <br>
+					'color'*(string)* - painting line color <br>
+					'opacity'*(number[0-1])* - painting line transparency 
+					</code>
+				</p>
+				<h3>Default values</h3>
+				<p>
+					<code>'LineWidth': 5, <br>
+					"color": 'red',<br>
+					"opacity": 0.5	
+					</code>
+				</p>
+				<h3>Example (app.json)</h3>
+				<p>
+					<code>'LineWidth': 8, <br>
+					"color": 'yellow',<br>
+					"opacity": 0.6	
+					</code>
+				</p>
+			</article>
+		</section>
+		<nav></nav>
+		<footer></footer>
+	</div>
+</body>
+</html>
