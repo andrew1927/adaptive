@@ -1,14 +1,16 @@
 .container{
+	position: relative;
 	width: 340px;
 	margin: 0 auto;
-	font-family: RobotoLight;
+	font: 18px RobotoLight;
 }
 header .wrapper-menu{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	box-sizing: border-box;
 	height: 61px;
-	padding: 10px 20px 10px;
+	padding: 0 20px;
 	background-color: #000;
 }
 header .wrapper-menu .logo1{
@@ -16,142 +18,170 @@ header .wrapper-menu .logo1{
 	height: 47px;
 	background: url(../img/logo1.png) no-repeat;
 }
-header .wrapper-menu .dropdown-menu{
+header .wrapper-menu button{
 	width: 45px;
 	height: 45px;
 	border-radius: 5px;
+	border: none;
+	background: url("../img/reoder.png") no-repeat center;
 	background-color: #940868;
-}
-header .wrapper-menu .dropdown-menu .icon-reorder::before{
-	content: '';
-	display: inline-block;
-	width: 44px;
-	height: 34px;
-	background: url(../img/reoder.png) no-repeat 7px 10px, url(../img/reoder.png) no-repeat 7px 16px,  
-	url(../img/reoder.png) no-repeat 7px 22px, url(../img/reoder.png) no-repeat 7px 28px;
 	cursor: pointer;
 }
+/*menu open*/
 header .drop-out{
-	display: none;
+	opacity: 0;
+	position: absolute;
+	top: 7px;
+	right: 20px;
+	width: 155px;
+	height: 255px;
+	box-sizing: border-box;
+	padding: 30px 17px;
+	border-radius: 5px;
+	font: 20px RobotoLight;
+	background-color: #950868;
 }
+header .drop-out a{
+	color: #fff;
+	line-height: 30px;
+}
+header .wrapper-menu button:hover .drop-out{
+	opacity: 1;
+	-webkit-transition: opacity 0.6s ease-in-out;
+}
+/*********/
 header .wrapper-search{
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	box-sizing: border-box;
 	height: 61px;
-	padding: 10px 20px;
 	background-color: #940868;
 }
-header .wrapper-search input[type="search"]{
+header .wrapper-search input{
 	width: 250px;
 	height: 40px;
 	padding: 0px 20px;
 	border: 1px solid #2a2b2c;
-	font-size: 1.125em;
+	font-size: 1em;
 	color: #686868;
 	background-color: #f8f8f8;
 }
-header .wrapper-search button[type="submit"]{
+header .wrapper-search button{
 	width: 50px;
 	height: 40px;
-	background-color: #fecd36;
 	border: none;
-}
-header .wrapper-search button .loupe::before{
-	content: '';
-	display: inline-block;
-	width: 16px;
-	height: 16px;
-	background: url(../img/search.png) no-repeat center;
+	background: url("../img/search.png") no-repeat center;
+	background-color: #fecd36;
 }
 .container section{
-	height: 1470px;
 	box-sizing: border-box;
-	padding: 20px 25px 65px 20px;
+	padding: 20px 25px 41px 20px;
 	background-color: #fff;
-	font: 18px MyriadRegular;
+	font-family: MyriadRegular;
 }
-.container section article{
-	line-height: 1.4em;
-}
-.container section article > h1{
-	font: 1.875em RobotoMedium;
-	color: #333;
+.container section code{
+	font-family: LetterGothic;
 }
 .container section article > h2{
-	font: 28px RobotoBold;
-	color: #333;
+	font: 1.66em RobotoMedium;
+	color: #213053;
+	margin-bottom: 9px;
 }
 .container section article > h3{
-	font: 20px RobotoBold;
+	font: 1.33em RobotoMedium;
+	margin-bottom: 21px;
 	color: #333;
+}
+.container section article > h4{
+	font: 1em RobotoBold;
+	color: #333;
+	margin-bottom: 18px;
+}
+.container section article > ol{
+	list-style: decimal; 
+}
+.container section article > code:nth-of-type(3){
+	margin: 0 0 41px 14px;
+}
+.container section article > code:nth-of-type(4){
+	font-family: MyriadRegular;
+}
+.container section article > code:nth-of-type(5){
+	margin-bottom: 44px;
+}
+.container section article p{
+	margin-bottom: 20px;
+}
+.container section article code{
+	display: block;
+	margin: 0 0 21px 14px;
+	background: #fff2fb;
 }
 .container nav{
 	box-sizing: border-box;
-	height: 258px;
-	padding: 27px 18px;
+	padding: 23px 18px;
 	background-color: #000;
 }
-.container nav > h2 {
-	font-size: 1.25em;	
+.container nav > h3 {
+	font-size: 1.11em;	
 	color: #484848;
-	line-height: 1.25em;
 }
 .container nav a{
-	font-size: 1.125em;
+	font-size: 1em;
 	color: #fff;
 	line-height: 2em;
-
+}
+.container nav h3 ~ a::after{
+	content: "\2191";
 }
 .container nav > a{
+	display: block;
+	width: 100px;
 	text-decoration: none;
 	color: #c39c27;
-}
-.container nav > a::after{
-	content: '↑';
+	margin-top: 9px;
 }
 .container footer{
 	box-sizing: border-box;
-	height: 1190px;
 	padding: 34px 45px 30px 17px;
 	font-size: 18px;
 	color: #e6d2de;
 	background-color: #960869;
 }
-.container footer h2{
-	font-size: 20px;
-	color: #c39c27;
-}
 .container footer h3{
-	font: 18px Robotomedium;
-	color: #fff;
-}
-.container footer h3:first-of-type{
-	margin: 40px 0 10px 0;
-}
-.container footer h3:nth-of-type(2){
-	margin: 66px 0 7px 0;
-}
-.container footer h3:last-of-type{
-	margin: 64px 0 20px 0px;
+	font-size: 1.11em;
+	color: #c39c27;
+	margin-bottom: 35px;
 }
 .container footer p{
-	line-height: 1.5em;
+	font: 1em Robotomedium;
+	margin-bottom: 7px;
+}	
+.container footer address{
+	line-height: 1.6em;
+	margin-bottom: 67px;
+}
+.container footer address:nth-of-type(2){
+	margin-bottom: 59px;
+}
+.container footer address:last-of-type{
+	margin-bottom: 47px;
 }
 .container footer > figure{
 	font-size: 24px;
-	margin: 41px 0px 36px 114px;
+	margin: 41px 0px 30px 114px;
 	width: 80px;
 }
 .container footer figcaption{
-	margin-top: 14px;
+	margin-top: 10px;
 }
 .container footer .wrapper-social{
 	display: flex;
 	justify-content: space-between;
 	width: 280px;
 }
-.container footer h2:last-of-type{
+.container footer h3:last-of-type{
 	margin-bottom: 23px;
 }
 .container footer .wrapper-social button{
@@ -166,7 +196,7 @@ header .wrapper-search button .loupe::before{
 }
 .container footer .wrapper-social button:nth-of-type(2){
 	background: url("../img/twitter.png") no-repeat center;
-	background-color: #fdcc36;
+	background-color: #000;
 }
 .container footer .wrapper-social button:nth-of-type(3){
 	background: url("../img/linkedin.png") no-repeat center;
@@ -176,12 +206,17 @@ header .wrapper-search button .loupe::before{
 	background: url("../img/more.png") no-repeat center;
 	background-color: #000;
 }
+.container footer .wrapper-social button:hover{
+	background-color: #fdcc36;
+	-webkit-transition: background 0.5s linear;
+}
 .container .logo2{
 	width: 80px;
 	height: 43px;
-	margin: 55px 0 18px;
+	margin: 55px 0 21px;
 	background: url("../img/logo2.png") no-repeat;
 }
 .container footer p:last-of-type{
 	color: #620443;
+	margin-bottom: 0;
 }

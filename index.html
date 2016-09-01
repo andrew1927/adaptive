@@ -11,10 +11,10 @@
 <body>
 	<div class="container">
 		<header>
+			<a name="top"></a>
 			<div class="wrapper-menu">
 				<div class="logo1"></div>
-				<div class="dropdown-menu">
-					<span class="icon-reorder"></span>
+				<button>
 					<div class="drop-out">
 						<ul>
 							<li><a href="">Register now</a></li>
@@ -23,93 +23,82 @@
 							<li><a href="">Issues</a></li>
 						</ul>
 					</div>
-				</div>
+				</button>
 			</div>
-				<div class="wrapper-search">
-					<input type="search" placeholder="Search">
-					<button type="submit" value="search"><span class="loupe"></span></button>
-				</div>
+			<div class="wrapper-search">
+				<input type="search" placeholder="Search">
+				<button type="submit" value="search"></button>
+			</div>
 		</header>
 		<section>
 			<article>
-				<h1>Go to adjacent</h1>
+				<h2>Go to adjacent</h2>
 				<p>Component for drawing in the presen- tation</p>
-				<p>Consist of the button to enable/disable drawing mode and canvas - drawing area.</p>
-				<h2>Install</h2>
-				<p>bower install -- save test/paint-tool</p>
-				<h2>Link</h2>
-					<p>
-						<code>&#60;link rv-component="components/paint-tool"&#62;</code>
-					</p>
-				<h3>Styles:</h3>	
-				<p>
-					<code>&#60;link rel="stylesheet" href="compostyle.css"&#62;</code>
-				</p>
-				<h3>Use</h3>
+				<p>Consists of the button to enable / dis- <br> able drawing mode and canvas - draw- <br>ing area.</p>
+				<h3>Install</h3>
+				<code>bower install --save test/paint-tool</code>
+				<h3>Link</h3>
+				<code>&#60;link rv-component=" <br> components/paint-tool"&#62;</code>
+				<h4>Styles:</h4>	
+				<code>&#60;link rel="stylesheet" href="compostyle.css"&#62;</code>
+				<h4>Use</h4>
 				<ol>
-					<li>1.Need to add binder to draw on any element:
-						<p>
-							<code>&#60;button rv-paint&#62;Paint&#60;/button&#62;</code>
-						</p>
+					<li><p>Need to add binder to draw on any element:</p>
+						<code>&#60;button <br> rv-paint&#62;Paint&#60;/button&#62;</code>
 					</li>
 					<li>
-						2.When drawing mode is enabled, on this element automatically add class 'active'. 
+						<p>When drawing mode is enabled, on this element automatically add class 'active'.</p> 
 					</li>
 				</ol>
-				<h2>Examples</h2>
-				<p>Besides you can change paint-tool default values. To do this, add an object 'paint' in app.json.</p>
-				<p>
-					<code>'LineWidth' *(number)* - painting line width in px <br>
-					'color'*(string)* - painting line color <br>
-					'opacity'*(number[0-1])* - painting line transparency 
-					</code>
-				</p>
-				<h3>Default values</h3>
-				<p>
-					<code>'LineWidth': 5, <br>
-					"color": 'red',<br>
-					"opacity": 0.5	
-					</code>
-				</p>
-				<h3>Example (app.json)</h3>
-				<p>
-					<code>'LineWidth': 8, <br>
-					"color": 'yellow',<br>
-					"opacity": 0.6	
-					</code>
-				</p>
+				<h3>Examples</h3>
+				<p>Besides you can change paint-tool de- <br> fault values. To do this, add an object 'paint' in app.json.</p>
+				<code>'LineWidth'*(number)* - painting line <br> width in px <br>
+				'color'*(string)* - painting line color <br>
+				'opacity'*(number[0-1])* - painting line transparency</code>
+				<h4>Default values</h4>
+				<code>'LineWidth': 5, <br>
+				"color": 'red',<br>
+				"opacity": 0.5	
+				</code>
+				<h4>Example (app.json)</h4>
+				<code>"paint": { <br>
+					    	"lineWidth": 8, <br>
+							"color": "yellow",
+							"opacity": 0.6 <br>
+						}
+				</code>
 			</article>
 		</section>
 		<nav>
-		<h2>Site map</h2>
+		<h3>Site map</h3>
 			<ul>
 				<li><a href="">Register now</a></li>
 				<li><a href="">What It Is</a></li>
 				<li><a href="">How It Works</a></li>
 				<li><a href="">Issues</a></li>
 			</ul>
-			<a href="" >Back to top</a>
+			<a href="#top">Back to top</a>
 		</nav>
 		<footer>
-			<h2>Contact us</h2>
-			<h3>Tallin</h3>
-			<p>Address: Rävala pst 5, Tallinna linn, Harju maakond, 10143 Estonia
-			Landline: +372 69 80 467</p>
-			<h3>Zhytomyr</h3>
-			<p>Address: 10003, Ukraine, Zhytomyr, Peremohy str., 99 <br>
-			Landline/Fax: +380 412 425 904 Mobile: +380 98 323 47 68</p>
-			<h3>Kyiv</h3>
-			<p>Address: 04073, Ukraine, Kyiv, 
+			<h3>Contact us</h3>
+			<p>Tallin</p>
+			<address>Address: Rävala pst 5, Tallinna linn, Harju maakond, 10143 Estonia
+			Landline: +372 69 80 467</address>
+			<p>Zhytomyr</p>
+			<address>Address: 10003, Ukraine, Zhytomyr, Peremohy str., 99 <br>
+			Landline/Fax: +380 412 425 904 Mobile: +380 98 323 47 68</address>
+			<p>Kyiv</p>
+			<address>Address: 04073, Ukraine, Kyiv, 
 			Pymomenko str., 13, <br>
 			Business Centre “Forum”, <br>
 			building 6A, office 28 <br>
 			Landline/Fax: +38 044 222 62 65 <br>	
-			Mobile: +380 97 532 86 13</p>
+			Mobile: +380 97 532 86 13</address>
 			<figure>
 					<img src="img/logo3.png" alt="logo">
 					<figcaption>TestsitE</figcaption>
 			</figure>
-			<h2>Follow us</h2>
+			<h3>Follow us</h3>
 				<div class = "wrapper-social">
 					<button><a href=""></a></button>
 					<button><a href=""></a></button>
