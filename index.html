@@ -13,136 +13,147 @@
 		<header>
 			<a name="top"></a>
 			<div class="wrapper-menu">
-				<figure>
-					<img src="img/logo1.png" alt="logo">
-					<figcaption>TestsitE</figcaption>
-				</figure>
-				<button></button>
-				<nav class="top-menu">
+				<div class="center-position">
+					<figure>
+						<img src="img/logo3.png" alt="logo">
+						<figcaption>TestsitE</figcaption>
+					</figure>
+					<button class="btn-menu"></button>
+					<nav class="top-menu">
+						<ul>
+							<li><a href="">Register now</a></li>
+							<li><a href="">What It Is</a></li>
+							<li><a href="">How It Works</a></li>
+							<li><a href="">Issues</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="wrapper-search">
+				<div class="center-position">
+					<input type="search" placeholder="Search">
+					<button type="submit" value="search"></button>
+				</div>
+			</div>
+		</header>
+		<div class="main-content">
+			<div class="center-position">
+				<aside>
+					<details>
+						<summary>Type Of Module #1</summary>
+							<p><a href="">Side pop up</a></p>
+							<p><a href="">Go to adjacent</a></p>
+							<p><a href="">Open PDF</a></p>
+							<p><a href="">Go to without animation</a></p>
+							<p><a href="">Go to with animation</a></p>
+							<p><a href="">Send e-mail</a></p>
+					</details>
+					<details>
+						<summary>Type Of Module #2</summary>
+					</details>
+					<details>
+						<summary>Type Of Module #3</summary>
+					</details>
+					<details>
+						<summary>Type Of Module #4</summary>
+					</details>
+					<details>
+						<summary>Type Of Module #5</summary>
+					</details>
+				</aside>
+				<section>
+					<article>
+						<h2>Go to adjacent</h2>
+						<p>Component for drawing in the presentation</p>
+						<p>Consists of the button to enable / disable drawing mode and canvas-drawing area.</p>
+						<h3>Install</h3>
+						<code>bower install --save test/paint-tool</code>
+						<h3>Link</h3>
+						<code>&#60;link rv-component="components/paint-tool"&#62;</code>
+						<h4>Styles:</h4>	
+						<code>&#60;link rel="stylesheet" href="compostyle.css"&#62;</code>
+						<h4>Use</h4>
+						<ol>
+							<li><p>Need to add binder to draw on any element:</p>
+								<code>&#60;button rv-paint&#62;Paint&#60;/button&#62;</code>
+							</li>
+							<li>
+								<p>When drawing mode is enabled, on this element automatically add class 'active'.</p> 
+							</li>
+						</ol>
+						<h3>Examples</h3>
+						<p>Besides you can change paint-tool default values. To do this, add an object 'paint' in app.json.</p>
+						<code>'LineWidth'*(number)* - painting line width in px <br>
+						'color'*(string)* - painting line color
+						'opacity'*(number[0-1])* - painting line transparency</code>
+						<h4>Default values</h4>
+						<code>'LineWidth': 5, <br>
+						"color": 'red',<br>
+						"opacity": 0.5	
+						</code>
+						<h4>Example (app.json)</h4>
+						<code>"paint": { <br>
+							    	"lineWidth": 8, <br>
+									"color": "yellow",
+									"opacity": 0.6 <br>
+								}
+						</code>
+					</article>
+				</section>
+			</div>
+			<nav class="bottom-menu">
+				<div class="center-position">
+					<h3>Site map</h3>
 					<ul>
 						<li><a href="">Register now</a></li>
 						<li><a href="">What It Is</a></li>
 						<li><a href="">How It Works</a></li>
 						<li><a href="">Issues</a></li>
 					</ul>
-				</nav>
-			</div>
-			<div class="wrapper-search">
-				<input type="search" placeholder="Search">
-				<button type="submit" value="search"></button>
-			</div>
-		</header>
-		<div class="main-content">
-			<aside>
-				<details>
-					<summary>Type Of Module #1</summary>
-						<p><a href="">Side pop up</a></p>
-						<p><a href="">Go to adjacent</a></p>
-						<p><a href="">Open PDF</a></p>
-						<p><a href="">Go to without animation</a></p>
-						<p><a href="">Go to with animation</a></p>
-						<p><a href="">Send e-mail</a></p>
-				</details>
-				<details>
-					<summary>Type Of Module #2</summary>
-				</details>
-				<details>
-					<summary>Type Of Module #3</summary>
-				</details>
-				<details>
-					<summary>Type Of Module #4</summary>
-				</details>
-				<details>
-					<summary>Type Of Module #5</summary>
-				</details>
-			</aside>
-			<section>
-				<article>
-					<h2>Go to adjacent</h2>
-					<p>Component for drawing in the presentation</p>
-					<p>Consists of the button to enable / disable drawing mode and canvas-drawing area.</p>
-					<h3>Install</h3>
-					<code>bower install --save test/paint-tool</code>
-					<h3>Link</h3>
-					<code>&#60;link rv-component="components/paint-tool"&#62;</code>
-					<h4>Styles:</h4>	
-					<code>&#60;link rel="stylesheet" href="compostyle.css"&#62;</code>
-					<h4>Use</h4>
-					<ol>
-						<li><p>Need to add binder to draw on any element:</p>
-							<code>&#60;button rv-paint&#62;Paint&#60;/button&#62;</code>
-						</li>
-						<li>
-							<p>When drawing mode is enabled, on this element automatically add class 'active'.</p> 
-						</li>
-					</ol>
-					<h3>Examples</h3>
-					<p>Besides you can change paint-tool default values. To do this, add an object 'paint' in app.json.</p>
-					<code>'LineWidth'*(number)* - painting line width in px <br>
-					'color'*(string)* - painting line color
-					'opacity'*(number[0-1])* - painting line transparency</code>
-					<h4>Default values</h4>
-					<code>'LineWidth': 5, <br>
-					"color": 'red',<br>
-					"opacity": 0.5	
-					</code>
-					<h4>Example (app.json)</h4>
-					<code>"paint": { <br>
-						    	"lineWidth": 8, <br>
-								"color": "yellow",
-								"opacity": 0.6 <br>
-							}
-					</code>
-				</article>
-			</section>
+					<a href="#top">Back to top</a>
+				</div>
+			</nav>
 		</div>
-		<nav class="bottom-menu">
-		<h3>Site map</h3>
-			<ul>
-				<li><a href="">Register now</a></li>
-				<li><a href="">What It Is</a></li>
-				<li><a href="">How It Works</a></li>
-				<li><a href="">Issues</a></li>
-			</ul>
-			<a href="#top">Back to top</a>
-		</nav>
 		<footer>
-			<div class="column1">
-				<h3>Contact us</h3>
-				<p>Tallin</p>
-				<address>Address: Rävala pst 5, Tallinna linn, Harju maakond, 10143 Estonia
-				Landline: +372 69 80 467</address>
-				<p>Zhytomyr</p>
-				<address>Address: 10003, Ukraine, Zhytomyr, Peremohy str., 99 <br>
-				Landline/Fax: +380 412 425 904 Mobile: +380 98 323 47 68</address>
-			</div>
-			<div class="column2">
-				<p>Kyiv</p>
-				<address>Address: 04073, Ukraine, Kyiv, 
-				Pymomenko str., 13, <br>
-				Business Centre “Forum”, <br>
-				building 6A, office 28 <br>
-				Landline/Fax: +38 044 222 62 65 <br>	
-				Mobile: +380 97 532 86 13</address>
-				<figure>
-						<img src="img/logo3.png" alt="logo">
-						<figcaption>TestsitE</figcaption>
-				</figure>
-			</div>
-			<div class="column3">
-				<h3>Follow us</h3>
-					<div class = "wrapper-social">
-						<button><a href=""></a></button>
-						<button><a href=""></a></button>
-						<button><a href=""></a></button>
-						<button><a href=""></a></button>
-					</div>
-				<div class="logo2"></div>
-				<p>Privacy Policy. <br>
-				© 2007-2014. All rights reserved. 
-				QAPInt is a trademark of QAPInt.</p>
+			<div class="center-position">
+				<div class="column1">
+					<h3>Contact us</h3>
+					<p>Tallin</p>
+					<address>Address: Rävala pst 5, Tallinna linn, Harju maakond, 10143 Estonia
+					Landline: +372 69 80 467</address>
+					<p>Zhytomyr</p>
+					<address>Address: 10003, Ukraine, Zhytomyr, Peremohy str., 99 <br>
+					Landline/Fax: +380 412 425 904 Mobile: +380 98 323 47 68</address>
+				</div>
+				<div class="column2">
+					<p>Kyiv</p>
+					<address>Address: 04073, Ukraine, Kyiv, 
+					Pymomenko str., 13, <br>
+					Business Centre “Forum”, <br>
+					building 6A, office 28 <br>
+					Landline/Fax: +38 044 222 62 65 <br>	
+					Mobile: +380 97 532 86 13</address>
+					<figure>
+							<img src="img/logo3.png" alt="logo">
+							<figcaption>TestsitE</figcaption>
+					</figure>
+				</div>
+				<div class="column3">
+					<h3>Follow us</h3>
+						<div class = "wrapper-social">
+							<button><a href=""></a></button>
+							<button><a href=""></a></button>
+							<button><a href=""></a></button>
+							<button><a href=""></a></button>
+						</div>
+					<div class="logo2"></div>
+					<p>Privacy Policy. <br>
+					© 2007-2014. All rights reserved. 
+					QAPInt is a trademark of QAPInt.</p>
+				</div>
 			</div>
 		</footer>
 	</div>
+	<script src="js/script.js" defer></script>
 </body>
 </html>
