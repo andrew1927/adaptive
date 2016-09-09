@@ -1,6 +1,6 @@
 .container{
 	position: relative;
-	width: 340px;
+	width: 100%;
 	margin: 0 auto;
 	font: 18px RobotoLight;
 }
@@ -13,7 +13,7 @@ header .wrapper-menu .center-position{
 	align-items: center;
 	box-sizing: border-box;
 	height: 61px;
-	padding: 0 20px;
+	padding: 0 5%;
 }
 header .wrapper-menu .center-position > figure img{
 	width: 44px;
@@ -47,7 +47,6 @@ header .top-menu{
 }
 header .top-menu a{
 	color: #fff;
-	line-height: 30px;
 }
 header .visible{
 	display: block;
@@ -66,7 +65,7 @@ header .wrapper-search .center-position{
 	height: 61px;
 }
 header .wrapper-search .center-position input{
-	width: 250px;
+	width: 73.52%;
 	height: 40px;
 	padding: 0px 20px;
 	border: 1px solid #2a2b2c;
@@ -88,167 +87,467 @@ header .wrapper-search .center-position button{
 .main-content .center-position aside{
 	display: none;
 }
-.container section{
+.main-content article{
 	box-sizing: border-box;
 	background-color: #fff;
 	font-family: MyriadRegular;
 }
-.container section code{
+.main-content article code{
 	font-family: LetterGothic;
 }
-.container section article > h2{
+.main-content article section{
+	padding: 7.35% 8.82% 20.58% 5.88%;
+}
+.main-content article section > ul{
+	margin: 0 0 20px 9px;
+}
+.main-content article section > h2{
 	font: 1.66em RobotoMedium;
 	color: #213053;
 	margin-bottom: 9px;
 }
-.container section article > h3{
+.main-content article section > h3{
 	font: 1.33em RobotoMedium;
 	margin-bottom: 21px;
 	color: #333;
 }
-.container section article > h4{
+.main-content article section > h4{
 	font: 1em RobotoBold;
 	color: #333;
 	margin-bottom: 18px;
 }
-.container section article > ol{
-	list-style: decimal; 
+.main-content article section > ol{
+	margin: 0 0 25px 19px;
+	list-style: decimal;
 }
-.container section article > code:nth-of-type(3){
+.main-content article section > code:nth-of-type(3){
 	margin: 0 0 41px 14px;
 }
-.container section article > code:nth-of-type(4){
+.main-content article section > code:nth-of-type(4){
 	font-family: MyriadRegular;
 }
-.container section article > code:nth-of-type(5){
+.main-content article section > code:nth-of-type(5){
 	margin-bottom: 44px;
 }
-.container section article p{
+.main-content article section p{
 	margin-bottom: 20px;
 }
-.container section article code{
+.main-content article section code{
 	display: block;
 	margin: 0 0 21px 14px;
 	background: #fff2fb;
 }
-.container .bottom-menu .center-position{
+.main-content .bottom-menu .center-position{
 	box-sizing: border-box;
-	padding: 23px 18px;
+	padding: 6.76% 5.29%;
 	background-color: #000;
 }
-.container .bottom-menu .center-position > h3 {
-	font-size: 1.11em;	
+.main-content .bottom-menu .center-position > h3 {
+	font-size: 1;
 	color: #484848;
+	width: 80px;
 }
-.container .bottom-menu .center-position a{
+.main-content .bottom-menu .center-position a{
 	color: #fff;
 	line-height: 2em;
 }
-.container .bottom-menu h3 ~ a::after{
-	content: "\2191";
+.main-content .bottom-menu h3 ~ a::after{
+	content: " \2191";
 }
-.container .bottom-menu .center-position > a{
+.main-content .bottom-menu .center-position > a{
 	display: block;
-	width: 100px;
+	width: 104px;
 	text-decoration: none;
 	color: #c39c27;
 	margin-top: 9px;
 }
-.container footer{
+footer{
 	background-color: #960869;
 }
-.container footer .center-position{
+footer .center-position{
 	box-sizing: border-box;
-	padding: 40px 0px 30px 0px;
+	padding: 11.76% 5.29% 8.82% 5.29%;
 	font-size: 18px;
 	color: #e6d2de;
 }
-.container footer .center-position h3{
+footer .center-position h3{
 	font-size: 1.11em;
 	color: #c39c27;
 	margin-bottom: 35px;
 }
-.container footer .center-position p{
-	font: 1em Robotomedium;
+footer .center-position section > p{
+	font-family: RobotoMedium;
+	color: #fff;
 	margin-bottom: 2px;
 }	
-.container footer .center-position address{
+footer .center-position address{
 	line-height: 1.6em;
 	margin-bottom: 67px;
 }
-.container footer .center-position address:nth-of-type(2){
+footer .center-position address:nth-of-type(2){
 	margin-bottom: 59px;
 }
-.container footer .center-position address:last-of-type{
-	margin-bottom: 47px;
+footer .center-position address:last-of-type{
+	margin-bottom: 8px;
 }
-.container footer .center-position > figure{
-	font-size: 24px;
-	margin: 41px 0px 30px 114px;
+footer .center-position > figure{
+	font-size: 1.33em;
+	margin: 12.05% auto 8.82%;
 	width: 80px;
 }
-.container footer .center-position figcaption{
+footer .center-position figcaption{
 	margin-top: 0px;
 }
-.container footer .center-position .wrapper-social{
+footer .center-position .wrapper-social{
 	display: flex;
 	justify-content: space-between;
 	width: 280px;
 }
-.container footer .center-position h3:last-of-type{
-	margin-bottom: 31px;
+footer .center-position h3:last-of-type{
+	margin-top: 9px;
+	margin-bottom: 22px;
 }
-.container footer .center-position .wrapper-social button{
+footer .center-position .wrapper-social button{
 	width: 60px;
 	height: 60px;
 	border: none;
 	cursor: pointer;
 }
-.container footer .center-position .wrapper-social button:first-of-type{
+footer .center-position .wrapper-social button:first-of-type{
 	background: url("../img/facebook.png") no-repeat center;
 	background-color: #000;
 }
-.container footer .center-position .wrapper-social button:nth-of-type(2){
+footer .center-position .wrapper-social button:nth-of-type(2){
 	background: url("../img/twitter.png") no-repeat center;
 	background-color: #000;
 }
-.container footer .center-position .wrapper-social button:nth-of-type(3){
+footer .center-position .wrapper-social button:nth-of-type(3){
 	background: url("../img/linkedin.png") no-repeat center;
 	background-color: #000;
 }
-.container footer .center-position .wrapper-social button:last-of-type{
+footer .center-position .wrapper-social button:last-of-type{
 	background: url("../img/more.png") no-repeat center;
 	background-color: #000;
 }
-.container footer .center-position .wrapper-social button:hover{
+footer .center-position .wrapper-social button:hover{
 	background-color: #fdcc36;
 	-webkit-transition: background 0.5s linear;
 }
-.container .logo2{
+footer .center-position .logo2{
 	width: 80px;
 	height: 43px;
 	margin: 55px 0 21px;
 	background: url("../img/logo2.png") no-repeat;
 }
-.container footer .center-position p:last-of-type{
+footer .center-position p{
+	font-family: RobotoLight;
 	margin-bottom: 0;
+	color: #3c0228;
 }
 
-/*adaptive*/
-@media screen and (min-width: 1024px) {
-	.container{
-		width: 100%;
+/*responsive*/
+@media screen and (min-width: 620px){
+	header .wrapper-menu .center-position{
+		padding: 0 9%;
+		}
+	.main-content .bottom-menu .center-position{
+		height: 50px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font: 18px RobotoLight;
 	}
+	.main-content .bottom-menu .center-position ul{
+		display: flex;
+		justify-content: space-between;
+		width: 64%;
+		margin-right: 0px;
+	}
+	.main-content .bottom-menu .center-position > a{
+		margin-top: 2px;
+	}
+}
+@media screen and (min-width: 768px){
+	.container .center-position{
+		width: 80%;
+		margin: 0 auto;
+	}
+	header .wrapper-menu .center-position{
+		height: 100px;
+		padding: 0%;
+		}
+	header .wrapper-menu .center-position button{
+		display: none;
+	}
+	header .wrapper-menu .center-position figure{
+		height: 80px;
+	}
+	header .wrapper-menu .center-position > figure img{
+		width: 48px;
+		height: 51px;
+	}
+	header .wrapper-menu .center-position figure > figcaption{
+		display: block;
+		margin-top: 2px;
+		text-align: center;
+		font-size: 1em;
+		color: #fff;
+	}
+	header .top-menu{
+		display: block;
+		position: static;
+		width: 340px;
+		height: 100%;
+		padding: 0px;
+		border-radius: 0;
+		background-color: inherit;
+	}
+	header .wrapper-menu .top-menu ul{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		height: 70px;
+	} 
+	header .wrapper-search .center-position{
+		justify-content: flex-end;
+		height: 88px;
+	}
+	header .top-menu ul li{
+		font-size: 0.85em;
+	}
+	header .top-menu ul li:first-of-type > a{
+		text-decoration: none;
+		font-family: RobotoBold;
+		color: #fecd33;
+	}
+	header .wrapper-search .center-position input{
+		width: 330px;
+		height: 36px;
+		padding: 0 20px;
+		font-size: 1em;
+	}
+	header .wrapper-search .center-position button{
+		width: 54px;
+		height: 38px;
+		background-size: 17px 17px;
+	}
+	.main-content .center-position{
+		height: auto;
+		display: flex;
+		justify-content: space-between;
+		font-family: MyriadRegular;
+	}
+	.main-content .center-position aside{
+		display: block;
+	}
+	.main-content aside summary{
+		width: 70%;
+		height: 28px;
+		background-color: #fecd35;
+		margin-bottom: 1px;
+		font: 0.85em RobotoMedium;
+		line-height: 1.7em;
+		padding-left: 7px;
+		outline: none;
+	}
+	.main-content aside details nav ul >li{
+		height: 32px;
+		width: 80%;
+		background-color: #fff;
+		margin-bottom: 1px;
+		font: 1em RobotoMedium;
+		line-height: 1.7em;
+		padding-left: 13px;
+	}
+	.main-content aside details nav ul >li:hover{
+		background-color: #f2f173;
+		color: #df5eb6;
+		font-size: 1em;
+		transition: all .4s;
+	}
+	.main-content aside details nav ul li > a{
+		font-size:  0.85em;
+		text-decoration: none;
+		color: #000;
+	}
+	.main-content aside details nav ul li:nth-of-type(2) > a{
+		color: #960869;
+	}
+	.main-content article section{
+		width: 384px;
+		padding: 27px 0 159px 0;
+	}
+	.main-content article code{
+		font-family: LetterGothic;
+	}
+	.main-content article section > h2{
+		font: 1.76em RobotoMedium;
+		color: #213053;
+		margin-bottom: 24px;
+	}
+	.main-content article section > h3{
+		font: 1.1em RobotoMedium;
+		margin-bottom: 19px;
+		color: #333;
+	}
+	.main-content article section > h4{
+		font-family:  RobotoBold;
+		color: #333;
+		margin: 0px 0 20px 0px;
+	}
+	.main-content article section > ul{
+		list-style: square;
+		margin: 0 0 42px 37px;
+	}
+	.main-content article section > code:nth-of-type(3){
+		margin: 0 0 43px 15px;
+	}
+	.main-content article section > code:nth-of-type(4){
+		font-family: MyriadRegular;
+	}
+	.main-content article section > code:nth-of-type(5){
+		margin-bottom: 18px;
+	}
+	.main-content article section p{
+		margin: 0px 0px 22px 16px;
+	}
+	.main-content article section ol{
+		margin: 0px 0px 44px 36px;
+	}
+	.main-content article section code{
+		display: block;
+		margin: 0 0 22px 16px;
+		background: #fff2fb;
+	}
+	.main-content aside{
+		margin-top: 62px;
+		width: 300px;
+		height: 480px;
+	}
+	.main-content .bottom-menu{
+		background-color: #000;
+	}
+	.main-content .bottom-menu .center-position{
+		height: 70px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font: 1em RobotoLight;
+		padding: 0;
+	}
+	.main-content .bottom-menu .center-position ul{
+		display: flex;
+		justify-content: space-between;
+		width: 364px;
+		margin-left: 1%;
+		margin-right: auto;
+	}
+	.main-content .bottom-menu .center-position h3{
+		color: #757575;
+	}
+	.main-content .bottom-menu .center-position li a{
+		color: #fff;
+	}
+	.main-content .bottom-menu .center-position > a{
+		width: 111px;
+		color:#f1ba3e;
+		margin-top: 0px;
+		margin-left: 1%;
+	}
+	footer .center-position{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 310px;
+		font-size: 0.85em;
+		padding: 26px 0px 0px 0px;
+	}
+	footer .center-position section{
+		width: 202px;
+	}
+	footer .center-position section:last-of-type{
+		margin-top: 27px;
+	}
+	footer .center-position section:first-of-type > p,
+	footer .center-position section:nth-of-type(2) > p,
+	footer .center-position section:last-of-type > p{
+		display: inline-block;
+		width: auto;
+	}
+	footer .center-position .wrapper-social{
+		width: 185px;
+	}
+	footer .center-position .wrapper-social button{
+		width: 42px;
+		height: 42px;
+	}
+	footer .center-position .wrapper-social button:first-of-type{
+		background-size: 30% 50%;
+	}
+	footer .center-position .wrapper-social button:nth-of-type(2){
+		background-size: 50% 50%;
+	}
+	footer .center-position .wrapper-social button:nth-of-type(3){
+		background-size: 50% 45%;
+	}
+	footer .center-position .wrapper-social button:last-of-type{
+		background-size: 50% 30%;
+	}
+	footer .center-position .wrapper-social button:hover{
+		background-color: #cfb236;
+		-webkit-transition: background 0.8s linear;
+		-webkit-transform: scale(1.2);
+	}
+	footer .center-position h3{
+		width: 99px;
+		font-size: 18px;
+		color: #f1ba3e;
+	}
+	footer .center-position > h3:first-of-type{
+		margin-bottom: 9px;
+	}
+	footer .center-position address{
+		font: 0.85em RobotoLight;
+		color:#f3e9ef;
+		line-height: 1.7em;
+	}
+	footer .center-position p{
+		width: 191px;
+	}
+	footer .center-position section:first-of-type > address{
+		margin-bottom: 40px;
+	}
+	footer .center-position section:nth-of-type(2) > address{
+		line-height: 1.8em;
+		margin-bottom: 13px;
+	}
+	footer .center-position > figure{
+		margin: 0;
+	}
+	footer .center-position figure > img{
+		width: 48px;
+		height: 51px;
+	}
+	footer .center-position figure > figcaption{
+		font-size: 0.85em;
+		margin-top: 0px;
+		margin-bottom: 5px;
+	}
+	footer .center-position .logo2{
+		width: 53px;
+		height: 28px;
+		margin: 33px 0 9px 0;
+		background-size: contain;
+	}
+}
+@media screen and (min-width: 1024px) {
 	.container .center-position{
 		width: 940px;
 		margin: 0 auto;
 	}
 	header .wrapper-menu .center-position{
-		padding: 0;
 		height: 150px;
-	}
-	header .wrapper-menu .center-position button{
-		display: none;
+		padding: 0;
 	}
 	header .wrapper-menu .center-position figure{
 		height: 120px;
@@ -258,16 +557,13 @@ header .wrapper-search .center-position button{
 		height: 78px;
 	}
 	header .wrapper-menu .center-position figure > figcaption{
-		display: block;
-		text-align: center;
-		font-size: 1.33em;
-		color: #fff;
 		margin-top: 12px;
+		font-size: 1.33em;
 	}
 	header .top-menu{
 		display: block;
 		position: static;
-		width: 480px;
+		width: 461px;
 		height: 100%;
 		border-radius: 0;
 		background-color: inherit;
@@ -276,14 +572,11 @@ header .wrapper-search .center-position button{
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
-		font-size: 1;
-		width: 463px;
-		height: 84px;
+		width: 460px;
+		height: 110px;
 	} 
-	header .top-menu ul li:first-of-type > a{
-		text-decoration: none;
-		font-family: RobotoBold;
-		color: #fecd33;
+	header .top-menu ul li{
+		font-size: 1em;
 	}
 	header .wrapper-search .center-position{
 		justify-content: flex-end;
@@ -300,7 +593,7 @@ header .wrapper-search .center-position button{
 		height: 57px;
 		background-size: 25px 25px;
 	}
-	.container .main-content .center-position{
+	.main-content .center-position{
 		height: auto;
 		display: flex;
 		justify-content: space-between;
@@ -309,7 +602,8 @@ header .wrapper-search .center-position button{
 	.main-content .center-position aside{
 		display: block;
 	}
-	aside summary{
+	.main-content aside summary{
+		width: 100%;
 		height: 42px;
 		background-color: #fecd35;
 		margin-bottom: 1px;
@@ -318,7 +612,7 @@ header .wrapper-search .center-position button{
 		padding-left: 10px;
 		outline: none;
 	}
-	aside summary ~ p{
+	.main-content aside details nav ul >li{
 		height: 48px;
 		background-color: #fff;
 		margin-bottom: 1px;
@@ -326,180 +620,186 @@ header .wrapper-search .center-position button{
 		line-height: 2em;
 		padding-left: 19px;
 	}
-	aside summary ~ p > a{
+	.main-content aside details nav ul >li:hover{
+		background-color: #f2f173;
+		color: #df5eb6;
+		font-size: 1.2em;
+		transition: all .4s;
+	}
+	.main-content aside details nav ul li > a{
 		text-decoration: none;
 		color: #000;
+		font-size: 1em;
 	}
-	.container section article{
+	.main-content aside details nav ul li:nth-of-type(2) > a{
+		color: #960869;
+	}
+	.main-content article section{
 		width: 542px;
-		padding: 41px 0 281px 0;
+		padding: 41px 0 241px 0;
 	}
-	.container section code{
+	.main-content article code{
 		font-family: LetterGothic;
 	}
-	.container section article > h2{
+	.main-content article section > h2{
 		font: 2.66em RobotoMedium;
 		color: #213053;
 		margin-bottom: 24px;
 	}
-	.container section article > h3{
+	.main-content article section > h3{
 		font: 1.66em RobotoMedium;
 		margin-bottom: 19px;
 		color: #333;
 	}
-	.container section article > h4{
+	.main-content article section > h4{
 		font-family:  RobotoBold;
 		color: #333;
 		margin: 0px 0 20px 0px;
 	}
-	.container section article > ol{
-		list-style: decimal; 
+	.main-content article section > ul{
+		list-style: square;
+		margin: 0 0 42px 37px;
 	}
-	.container section article > code:nth-of-type(3){
+	.main-content article section > code:nth-of-type(3){
 		margin: 0 0 43px 15px;
 	}
-	.container section article > code:nth-of-type(4){
+	.main-content article section > code:nth-of-type(4){
 		font-family: MyriadRegular;
 	}
-	.container section article > code:nth-of-type(5){
+	.main-content article section > code:nth-of-type(5){
 		margin-bottom: 18px;
 	}
-	.container section article p{
+	.main-content article section p{
 		margin: 0px 0px 22px 16px;
 	}
-	.container section article code{
+	.main-content article section ol{
+		margin: 0px 0px 44px 36px;
+	}
+	.main-content article section code{
 		display: block;
 		margin: 0 0 22px 16px;
 		background: #fff2fb;
 	}
-	.container aside{
+	.main-content aside{
 		margin-top: 62px;
 		width: 300px;
 		height: 480px;
 	}
-	.container .bottom-menu{
+	.main-content .bottom-menu{
 		background-color: #000;
+		height: 72px;
 	}
-	.container .bottom-menu .center-position{
+	.main-content .bottom-menu .center-position{
 		height: 70px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		font: 18px RobotoLight;
+		padding: 0px;
 	}
-	.container .bottom-menu .center-position ul{
+	.main-content .bottom-menu .center-position ul{
 		display: flex;
 		justify-content: space-between;
 		width: 446px;
 		margin-right: 247px;
 	}
-	.container .bottom-menu .center-position h3{
+	.main-content .bottom-menu .center-position h3{
+		width: 90px;
 		color: #757575;
 	}
-	.container .bottom-menu .center-position li a{
+	.main-content .bottom-menu .center-position li a{
 		color: #fff;
 	}
-	.container .bottom-menu .center-position > a{
+	.main-content .bottom-menu .center-position > a{
 		color:#f1ba3e;
 		margin-top: 0px;
 	}
-	.container .bottom-menu .center-position > a::after{
-		content: '\2191';
-	}
-	.container footer .center-position{
+	footer .center-position{
 		display: flex;
-		justify-content: space-between;
-		height: auto;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 470px;
 		font-size: 1.11em;
+		padding: 40px 0px 0px 0px;
 	}
-	.container footer .center-position .wrapper-social{
-		display: flex;
-		justify-content: space-between;
+	footer .center-position section{
+		width: 306px;
+	}
+	footer .center-position section:last-of-type{
+		margin-top: 41px;
+	}
+	footer .center-position section:first-of-type > p,
+	footer .center-position section:nth-of-type(2) > p,
+	footer .center-position section:last-of-type > p{
+		display: inline-block;
+		width: auto;
+	}
+	footer .center-position .wrapper-social{
 		width: 280px;
 	}
-	.container footer .center-position .wrapper-social button{
+	footer .center-position .wrapper-social button{
 		width: 64px;
 		height: 64px;
-		border: none;
-		cursor: pointer;
 	}
-	.container footer .center-position .wrapper-social button:first-of-type{
-		background: url("../img/facebook.png") no-repeat center;
+	footer .center-position .wrapper-social button:first-of-type{
 		background-size: 30% 50%;
-		background-color: #000;
 	}
-	.container footer .center-position .wrapper-social button:nth-of-type(2){
-		background: url("../img/twitter.png") no-repeat center;
+	footer .center-position .wrapper-social button:nth-of-type(2){
 		background-size: 50% 50%;
-		background-color: #000;
 	}
-	.container footer .center-position .wrapper-social button:nth-of-type(3){
-		background: url("../img/linkedin.png") no-repeat center;
+	footer .center-position .wrapper-social button:nth-of-type(3){
 		background-size: 50% 45%;
-		background-color: #000;
 	}
-	.container footer .center-position .wrapper-social button:last-of-type{
-		background: url("../img/more.png") no-repeat center;
+	footer .center-position .wrapper-social button:last-of-type{
 		background-size: 50% 30%;
-		background-color: #000;
 	}
-	.container footer .center-position .wrapper-social button:hover{
-		background-color: #fdcc36;
-		-webkit-transition: background 0.5s linear;
+	footer .center-position .wrapper-social button:hover{
+		background-color: #cfb236;
+		-webkit-transition: background 0.8s linear;
+		-webkit-transform: scale(1.2);
 	}
-	.container footer .center-position .column1{
-		width: 291px;
-	}
-	.container footer .center-position .column2{
-		width: 287px;
-	}
-	.container footer .center-position .column3{
-		width: 300px;
-	}
-	.container footer .center-position ~ h3{
+	footer .center-position h3{
+		width: 150px;
 		font-size: 1.11em;
 		color: #f1ba3e;
 	}
-	.container footer .center-position ~ p{
-		font: 1em RobotoMedium;
-		color:#fff;
+	footer .center-position > h3:first-of-type{
+		margin-bottom: 14px;
 	}
-	.container footer .center-position address{
+	footer .center-position address{
 		font: 18px RobotoLight;
 		color:#f3e9ef;
-		line-height: 1.8em;
-	}
-	.container footer .center-position .column1 > h3{
-		margin-bottom: 12px;
-	}
-	.container footer .center-position .column1 address:first-of-type{
-		margin-bottom: 60px;
-	}
-	.container footer .center-position .column2 > p{
-		margin: 41px 0 1px 0;
-	}
-	.container footer .center-position .column2 address{
 		line-height: 1.7em;
 	}
-	.container footer .center-position .column2 img{
-		width: 74px;
+	footer .center-position p{
+		width: 289px;
+	}
+	footer .center-position section:first-of-type > address{
+		margin-bottom: 56px;
+	}
+	footer .center-position section:nth-of-type(2) > address{
+		line-height: 1.8em;
+		margin-bottom: 13px;
+	}
+	footer .center-position section:last-of-type > address{
+		line-height: 1.8;
+		margin-bottom: 13px;
+	}
+	footer .center-position > figure{
+		margin: 0;
+	}
+	footer .center-position figure > figcaption{
+		margin-top: -4px;
+		margin-bottom: 35px;
+		font-size: 1em;
+	}
+	footer .center-position figure > img{
+		width: 72px;
 		height: 78px;
 	}
-	.container footer .center-position .column2 address{
-		margin-bottom: 9px;
-	}
-	.container footer .center-position .column3 > h3{
-		margin: 5px 0px 26px 0;
-	}
-	.container footer .center-position .column3 .logo2{
+	footer .center-position .logo2{
 		width: 80px;
-		height: 44px;
+	height: 43px;
 		margin: 117px 0 9px 0;
-		background: url(../img/logo2.png) no-repeat;
-		background-size: contain;
-	}
-	.container footer .center-position .column3 > p{
-		font: 18px RobotoLight;
-		color: #3c0228;
 	}
 }
